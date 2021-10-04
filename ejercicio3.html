@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script defer>
+    //    let usuarios = [TaniuOp, alvaroariasrivero, Rurucode, jjcasco99, City93, gustavotremont]
+       let urlBase = "https://api.github.com/users/"
+       let url = Rurucode;
+       
+       
+       let elFetch = fetch(`${urlBase}${url}`)
+       .then(res=>res.json())
+       .then(json=>{
+       console.log(json);              
+       })}
+
+
+
+    //    fetch(`${urlBase}${url}`)
+    //         .then(res=>res.json())
+    //         .then(json=> {
+    //             console.log(json)
+    //             name.innerHTML = json.login;
+    //             nrepo.innerHTML = json.public_repos;
+    //             avatar.src = json.avatar_url;
+    //             alert("Oye que soy yo");
+    //             })}
+
+        
+    //    let mapeo = usuarios.map((elemento)=> return)
+
+
+
+       Promise.all()
+    </script>
+</body>
+</html>

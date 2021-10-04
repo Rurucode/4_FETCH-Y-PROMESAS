@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMESAS</title>
+    <script  src="js.js"></script>
+</head>
+<body>
+   <script>
+       let urlBase = "https://dog.ceo/api/"
+    //    let raza = 
+       
+       
+       fetch(`${urlBase}breeds/list/all`)
+            .then(res=>res.json())
+            .then(json=>console.log(json));
+
+        fetch(`${urlBase}breeds/image/random`)
+            .then(res=>res.json())
+            .then(json=>console.log(json));  
+            
+            
+        fetch(`${urlBase}breed/collie/images/random/3`)
+            .then(res=>res.json())
+            .then(json=>console.log(json));  
+            
+
+        // fetch(`${urlBase}breed/$(raza)/images/random/3`)
+        //     .then(res=>res.json())
+        //     .then(json=>console.log(json));  
+                
+            
+   </script>
+   <form action="">
+    <label for="raza">Nombre</label> 
+    <input type="text" id="raza" name="raza" placeholder="Su raza" value="">
+   </form>
+    
+</body>
+</html>
